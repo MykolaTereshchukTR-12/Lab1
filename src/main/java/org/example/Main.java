@@ -21,13 +21,21 @@ public class Main {
         System.out.println("Your results: \n" + "Sum: " + summ + "\n" + "Difference: " + -(summ));
         System.out.println("Product: " + prod + "\n" + "Fraction: " + (1 / prod) + "\n");
         Main mainObject = new Main();
+        mainObject.text();
+        System.out.print("\n");
         mainObject.user();
         System.out.print("\n");
         mainObject.cars();
         System.out.print("\n");
-        mainObject.text();
-        System.out.print("\n");
         mainObject.revers(scanner.nextInt());
+    }
+
+    public void text() {
+        String[] words = {"Hi,", "my", "name", "is", "Mykola", "and", "it`s", "my", "first", "coding", "on", "Java!"};
+        System.out.print("\n");
+        for (String word : words) {
+            System.out.print(word + " ");
+        }
     }
 
     public void user() {
@@ -96,14 +104,6 @@ public class Main {
             sumEngineCapacity += ourCars[i].getEngineCapacity();
         }
         System.out.print("Sum power: " + sumPower + "\nSum Engine capacity: " + sumEngineCapacity);
-    }
-
-    public void text() {
-        String[] words = {"Hi,", "my", "name", "is", "Mykola", "and", "it`s", "my", "first", "coding", "on", "Java!"};
-        System.out.print("\n");
-        for (String word : words) {
-            System.out.print(word + " ");
-        }
     }
 
     public void revers(int n) {
