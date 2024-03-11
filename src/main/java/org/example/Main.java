@@ -6,13 +6,6 @@ import java.util.Scanner;
 //Learn language java
 
 public class Main {
-    public void text() {
-        String[] words = {"Hi,", "my", "name", "is", "Mykola", "and", "it`s", "my", "first", "coding", "on", "Java!"};
-        System.out.print("\n");
-        for (String word : words) {
-            System.out.print(word + " ");
-        }
-    }
 
     public static void main(String[] arg) {
         Scanner scanner = new Scanner(System.in);
@@ -103,6 +96,14 @@ public class Main {
             sumEngineCapacity += ourCars[i].getEngineCapacity();
         }
         System.out.print("Sum power: " + sumPower + "\nSum Engine capacity: " + sumEngineCapacity);
+    }
+
+    public void text() {
+        String[] words = {"Hi,", "my", "name", "is", "Mykola", "and", "it`s", "my", "first", "coding", "on", "Java!"};
+        System.out.print("\n");
+        for (String word : words) {
+            System.out.print(word + " ");
+        }
     }
 
     public void revers(int n) {
